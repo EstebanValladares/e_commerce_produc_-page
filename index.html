@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c91ca5f5f4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>e-commer</title>
+</head>
+
+<body>
+    <nav class="container-nav">
+        <section class="section-nav1">
+            <i class="fa-solid fa-bars openBars"></i>
+            <h1>sneakers</h1>
+            <ul>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </section>
+        <section class="section-nav2">
+            <i class="fa-solid fa-cart-shopping list-shop" data-open="1"><sup class="items-select">0</sup></i>
+            <img src="./images/image-avatar.png" alt="">
+        </section>
+        <!-- card total products -->
+        <section class="card-shop">
+            <article>
+                <h2>Cart</h2>
+                <div class="dateCard">
+                    <article class="descriptions">
+                        <img src="./images/image-product-1-thumbnail.jpg">
+                        <div>
+                            <p>Fall Limited Edition Sneakers</p>
+                            <p>$125.00 x <span class="all_amount">0</span> <span class="total_price">$0.00</span></p>
+                        </div>
+                        <i class="fa-solid fa-trash trash"></i>
+                    </article>
+                    <button>
+                        <a href="#">Checkout</a>
+                    </button>
+                </div>
+                <div class="dateText">
+                    <p>your cart is empty</p>
+                </div>
+            </article>
+        </section>
+    </nav>
+    <main>
+        <section class="container-producto1">
+            <i class="fa-solid fa-arrow-left left leftMobile"></i>
+            <i class="fa-solid fa-arrow-right right rightMobile"></i>
+            <img src="./images/image-product-1.jpg" class="modal-content">
+            <section class="collection-img">
+                <img src="./images/image-product-1-thumbnail.jpg" class="image" data-pic="1">
+                <img src="./images/image-product-2-thumbnail.jpg" class="image" data-pic="2">
+                <img src="./images/image-product-3-thumbnail.jpg" class="image" data-pic="3">
+                <img src="./images/image-product-4-thumbnail.jpg" class="image" data-pic="4">
+            </section>
+        </section>
+        <section class="container-producto2">
+            <article>
+                <p class="title">SNEAKER COMPANY</p>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer
+                    sole, they'll withstand everything the weather can offer.</p>
+                <span class="price">$125.00</span><span class="discount">50%</span>
+                <p class="old-price">$250</p>
+                <div class="container-button">
+                    <div>
+                        <button class="quantity less">-</button>
+                        <input type="text" value="0" class="date">
+                        <button class="quantity more">+</button>
+                    </div>
+                    <div>
+                        <button class="button-card">Add to cart</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- modal DOOM -->
+        <section class="modal">
+            <i class="fa-solid fa-x close"></i>
+            <div class=" container-image-modal">
+                <i class="fa-solid fa-arrow-left left"></i>
+                <i class="fa-solid fa-arrow-right right"></i>
+                <img src="./images/image-product-1.jpg" class="modal-content">
+            </div>
+            <section class="collection-img">
+                <img src="./images/image-product-1.jpg" class="image" data-pic="1">
+                <img src="./images/image-product-2.jpg" class="image" data-pic="2">
+                <img src="./images/image-product-3.jpg" class="image" data-pic="3">
+                <img src="./images/image-product-4.jpg" class="image" data-pic="4">
+            </section>
+        </section>
+
+        <!-- nav movil -->
+        <section class="nav-mobile">
+            <article>
+                <i class="fa-solid fa-x closed"></i>
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
